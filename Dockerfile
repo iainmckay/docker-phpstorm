@@ -5,7 +5,7 @@ MAINTAINER Iain Mckay "me@iainmckay.co.uk"
 
 # block from https://github.com/fgrehm/docker-netbeans
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list && \
-    apt-get update && apt-get install -y software-properties-common wget && \
+    apt-get update && apt-get install -y software-properties-common wget git && \
     add-apt-repository ppa:webupd8team/java -y && \
     apt-get update && \
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \

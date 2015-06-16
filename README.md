@@ -2,6 +2,12 @@
 
 Jetbrains PhpStorm 8.0.3 running inside a docker container. This project is derived from [`fgrehm/docker-netbeans`](https://github.com/fgrehm/docker-netbeans).
 
+## Features
+
+* PhpStorm 8.0.3
+* PHP 5.5
+* composer
+
 ## Running
 
 To launch PhpStorm we need to provide the current display and your X11 socket. You can launch PhpStorm with the following command:

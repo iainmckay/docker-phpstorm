@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=PhpStorm
-Exec=sh -c "docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.WebIde90:/home/developer/.WebIde90 -v ~/Projects:/workspace 
+Exec=sh -c "docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.WebIde100:/home/developer/.WebIde100 -v ~/Projects:/workspace 
 iainmckay/phpstorm:latest"
 Icon=phpstorm
 Terminal=false

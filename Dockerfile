@@ -28,5 +28,5 @@ RUN pear install PHP_CodeSniffer
 RUN npm install -g bower
 
 USER developer
-VOLUME /home/developer/.WebIde90
+VOLUME /home/developer/.WebIde100
 CMD /opt/phpstorm/bin/phpstorm.sh

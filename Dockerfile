@@ -19,7 +19,7 @@ RUN useradd -m -s /bin/bash developer \
     && touch /home/developer/.WebIde90/.keep \
     && chown -R developer.developer /home/developer \
     && mkdir /opt/phpstorm \
-    && wget -O - https://download.jetbrains.com/webide/PhpStorm-10.0.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
+    && wget -O - https://download.jetbrains.com/webide/PhpStorm-10.0.1.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
 
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin
 RUN php5enmod mcrypt curl

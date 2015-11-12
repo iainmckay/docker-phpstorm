@@ -1,10 +1,10 @@
 # docker-phpstorm
 
-Jetbrains PhpStorm 10.0.0 running inside a docker container. This project is derived from [`fgrehm/docker-netbeans`](https://github.com/fgrehm/docker-netbeans).
+Jetbrains PhpStorm 10.0.1 running inside a docker container. This project is derived from [`fgrehm/docker-netbeans`](https://github.com/fgrehm/docker-netbeans).
 
 ## Features
 
-* PhpStorm 10.0.0
+* PhpStorm 10.0.1
 * PHP 5.6
 * composer
 

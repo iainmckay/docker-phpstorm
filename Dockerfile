@@ -15,11 +15,11 @@ RUN sed 's/main$/main universe/' -i /etc/apt/sources.list && \
     rm -rf /tmp/*
 
 RUN useradd -m -s /bin/bash developer \
-    && mkdir /home/developer/.WebIde90 \
-    && touch /home/developer/.WebIde90/.keep \
+    && mkdir /home/developer/.WebIde100 \
+    && touch /home/developer/.WebIde100/.keep \
     && chown -R developer.developer /home/developer \
     && mkdir /opt/phpstorm \
-    && wget -O - https://download.jetbrains.com/webide/PhpStorm-10.0.1.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
+    && wget -O - https://download.jetbrains.com/webide/PhpStorm-10.0.2.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
 
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin
 RUN php5enmod mcrypt curl

@@ -8,6 +8,8 @@ Jetbrains PhpStorm 10.0.3 running inside a docker container. This project is der
 * PHP 5.6
 * composer
 
+There is a PHP7 based container in the [`php7`](https://github.com/iainmckay/docker-phpstorm/php7) branch.
+
 ## Running
 
 To launch PhpStorm we need to provide the current display and your X11 socket. You can launch PhpStorm with the following command:

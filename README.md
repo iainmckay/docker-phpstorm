@@ -7,6 +7,7 @@ Jetbrains PhpStorm 2016.1 running inside a docker container. This project is der
 * PhpStorm 2016.1
 * PHP 7
 * composer
+* graphviz
 
 There is a PHP5 based container in the [`master`](https://github.com/iainmckay/docker-phpstorm) branch.
 

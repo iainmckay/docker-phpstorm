@@ -23,7 +23,7 @@ RUN useradd -m -s /bin/bash developer \
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin
 RUN phpenmod curl gd gmp json ldap mysql odbc pgsql pspell readline recode snmp sqlite3 tidy xml xmlrpc bcmath bz2 enchant imap interbase intl mbstring mcrypt soap sybase xsl zip xdebug memcache memcached
 #RUN php5enmod mcrypt curl
-RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar -O /usr/bin/phpmd.phar
+RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar -O /usr/bin/phpmd.phar && chmod +x /usr/bin/phpmd.phar
 RUN pear install PHP_CodeSniffer
 RUN npm install -g bower
 

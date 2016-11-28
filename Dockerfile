@@ -21,7 +21,7 @@ RUN useradd -m -s /bin/bash developer \
 
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin
 RUN php5enmod mcrypt mysql xdebug curl memcached memcache gd apcu imagick imap intl sasl
-RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar -O /usr/bin/phpmd.phar
+RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar -O /usr/bin/phpmd.phar && chmod +x /usr/bin/phpmd.phar
 RUN pear install PHP_CodeSniffer
 RUN npm install -g bower
 

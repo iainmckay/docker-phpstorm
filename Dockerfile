@@ -13,11 +13,11 @@ RUN apt-get update && \
     rm -rf /tmp/*
 
 RUN useradd -m -s /bin/bash developer \
-    && mkdir /home/developer/.PhpStorm2016.2 \
-    && touch /home/developer/.PhpStorm2016.2/.keep \
+    && mkdir /home/developer/.PhpStorm2016.3 \
+    && touch /home/developer/.PhpStorm2016.3/.keep \
     && chown -R developer.developer /home/developer \
     && mkdir /opt/phpstorm \
-    && wget -O - https://download.jetbrains.com/webide/PhpStorm-2016.3.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
+    && wget -O - https://download.jetbrains.com/webide/PhpStorm-2016.3.1.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
 
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin
 RUN php5enmod mcrypt mysql xdebug curl memcached memcache gd apcu imagick imap intl sasl

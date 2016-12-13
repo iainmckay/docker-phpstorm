@@ -1,10 +1,10 @@
 # docker-phpstorm
 
-Jetbrains PhpStorm 2016.3 running inside a docker container. This project is derived from [`fgrehm/docker-netbeans`](https://github.com/fgrehm/docker-netbeans).
+Jetbrains PhpStorm 2016.3.1 running inside a docker container. This project is derived from [`fgrehm/docker-netbeans`](https://github.com/fgrehm/docker-netbeans).
 
 ## Features
 
-* PhpStorm 2016.3
+* PhpStorm 2016.3.1
 * PHP 7
 * composer
 * graphviz

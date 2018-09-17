@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Iain Mckay "me@iainmckay.co.uk"
 
-RUN apt-get update && apt-get install -y software-properties-common && add-apt-repository ppa:ondrej/php && apt-get update && \
+RUN apt-get update && apt-get install -y software-properties-common && LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && apt-get update && \
     apt-get install -y software-properties-common wget git curl && \
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update && \

@@ -25,6 +25,8 @@ RUN apt-get update && apt-get install -y software-properties-common && LC_ALL=C.
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
+COPY xdebug.ini /etc/php/7.2/mods-available/xdebug.ini
+
 RUN useradd -m -s /bin/bash developer \
     && mkdir /home/developer/.PhpStorm2018.2 \
     && touch /home/developer/.PhpStorm2018.2/.keep \

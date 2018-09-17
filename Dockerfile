@@ -35,7 +35,7 @@ RUN useradd -m -s /bin/bash developer \
     && wget -O - https://download.jetbrains.com/webide/PhpStorm-2018.2.3.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
 
 RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin
-RUN phpenmod curl gd gmp json ldap mysql odbc pgsql pspell readline recode snmp sqlite3 tidy xml xmlrpc bcmath bz2 enchant imap interbase intl mbstring mcrypt soap sybase xsl zip xdebug memcache memcached
+RUN phpenmod curl gd gmp json ldap mysql odbc pgsql pspell readline recode sqlite3 tidy xml xmlrpc bcmath bz2 enchant imap interbase intl mbstring soap xsl zip xdebug memcache memcached
 #RUN php5enmod mcrypt curl
 RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar -O /usr/bin/phpmd.phar && chmod +x /usr/bin/phpmd.phar
 RUN pear install PHP_CodeSniffer

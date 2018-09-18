@@ -42,7 +42,7 @@ RUN wget -c http://static.phpmd.org/php/latest/phpmd.phar -O /usr/bin/phpmd.phar
 RUN pear install PHP_CodeSniffer
 RUN npm install -g bower
 
-COPY xdebug.ini /etc/php/7.2/cli/conf.d/20-xdebug-dev.ini
+COPY xdebug.ini /etc/php/7.2/cli/conf.d/20-xdebug.ini
 
 USER developer
 VOLUME /home/developer/.PhpStorm2018.2

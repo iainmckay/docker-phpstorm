@@ -13,7 +13,8 @@ ENV PHP_XDEBUG_IDEKEY ${PHP_XDEBUG_IDEKEY:-docker}
 ENV PHP_XDEBUG_PROFILER_ENABLE ${PHP_XDEBUG_PROFILER_ENABLE:-0}
 ENV PHP_XDEBUG_PROFILER_OUTPUT_DIR ${PHP_XDEBUG_PROFILER_OUTPUT_DIR:-"/tmp"}
 
-RUN apt-get update && apt-get install -y software-properties-common && LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && apt-get update && \
+RUN set -ex && \
+    apt-get update && apt-get install -y software-properties-common && LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && apt-get update && \
     apt-get install -y software-properties-common wget git curl && \
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update && \

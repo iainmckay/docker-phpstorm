@@ -28,6 +28,10 @@ With this your configuration will be persisted to `/home/<user>/.PhpStorm2018.2`
 
 Note: Remember to change the ownership of the config directory on the host as it will be created as root if it does not already exist and PhpStorm won't be able to write to it.
 
+## Xdebug
+
+An environmental values for xdebug.ini configuration may be setup from an example .env.example and appending `--env <custom_env_file>` to the command
+
 ## Adding to your launcher
 
 There is a desktop launcher provided in `support/launcher`. You should place `phpstorm.desktop` in `~/.local/share/applications` and place `phpstorm.png` in `~/.local/share/icons`.
